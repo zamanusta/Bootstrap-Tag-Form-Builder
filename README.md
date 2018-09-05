@@ -7,34 +7,34 @@ Bootstrap 4 Form Builder script is a tool for creating Bootstrap 4 forms by usin
 ## Format
 The general format of the taglines are as below:
 
-type name [parameters} [attributes] column-size
+>type name [parameters} [attributes] column-size
 
 First element has to be the type of the item. Name element is not mandatory. When it is not defined, a name is assigned automatically. The order of parameters and attributes are not important. However column-size has to be in the end.
 
-Parameters
+## Parameters
 Parameters are given with a format like [p:...]. For single element parameters, there is no need for quotation marks (For ex: Label). However, multiple element parameters (such as the options of a selectbox) must be in double quotation marks. For example, the text of options of a select box is given like [o:"A", "B", "C"]. The values of these options can be given manually (like [v:"1", "2", "3"]). When value parameter is missing, values are created from the text values of options automatically.
 
 Common Parameters are:
 
-l: label - Label of an input element.
-p: placeholder - Placeholder of an input element -help text inside-
-v: value - Value of input element, used when an input is wanted to have a ready value when the form loaded first. It is also used for determining the post values of options.
-h: helptext - Small text appears under the input, when an additional explanation is required.
-o: options - Text of options (used for selectbox, checkbox and radio options.
-font size - Only applicable for title, written directly as h1 ... h6.
-bootstrap color - Only applicable for button, written between brackets (Ex: [success]).
+>l: label - Label of an input element.
+>p: placeholder - Placeholder of an input element -help text inside-
+>v: value - Value of input element, used when an input is wanted to have a ready value when the form loaded first. It is also used for determining the post values of options.
+>h: helptext - Small text appears under the input, when an additional explanation is required.
+>o: options - Text of options (used for selectbox, checkbox and radio options.
+>font size - Only applicable for title, written directly as h1 ... h6.
+>bootstrap color - Only applicable for button, written between brackets (Ex: [success]).
 
-Attributes
+## Attributes
 Attributes are written directly to the line or inside the option text (before closing double quotation) and consists of two characters.
 
 Common attributes are:
 
-** (required) : Make the field required for validation.
-## (disabled) : Make the field disabled.
-@@ (inline) : Makes multiple checkboxes and radio options inline when used.
-$$ (selected) : Only applicable for selectbox, for option which wanted to be shown selected on load. Written before closing the quotation mark (For ex: [o:"Opt1", "Opt2$$"]).
-!! (disabled) : Only applicable for selectbox, for option which wanted to be shown disabled. Written before closing the quotation mark (For ex: [o:"Opt1", "Opt2!!"]).
-bb (block) : Only applicable for button. Makes the button block-style.
+>** (required) : Make the field required for validation.
+>## (disabled) : Make the field disabled.
+>@@ (inline) : Makes multiple checkboxes and radio options inline when used.
+>$$ (selected) : Only applicable for selectbox, for option which wanted to be shown selected on load. Written before closing the quotation mark (For ex: [o:"Opt1", "Opt2$$"]).
+>!! (disabled) : Only applicable for selectbox, for option which wanted to be shown disabled. Written before closing the quotation mark (For ex: [o:"Opt1", "Opt2!!"]).
+>bb (block) : Only applicable for button. Makes the button block-style.
 
 Column Size
 Size of columns are based on Bootstrap 4 grid system. A row consists of 12 columns. A size of 1/1 (or 1) means the whole row, while 1/2 means the half of the row. When three items with 1/2, 1/4 and 1/4 sizes will consist one complete row.
